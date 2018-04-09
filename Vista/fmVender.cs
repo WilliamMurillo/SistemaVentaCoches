@@ -185,5 +185,13 @@ namespace Vista
             }
 
         }
+
+        //BOTON PARA REGRESAR AL RESUMEN
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fmResumen fm = new fmResumen();
+            fm.Show();
+            this.Hide();
+        }
     }
 }

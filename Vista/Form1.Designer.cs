@@ -56,6 +56,7 @@
             this.txtCon.Location = new System.Drawing.Point(115, 145);
             this.txtCon.Multiline = true;
             this.txtCon.Name = "txtCon";
+            this.txtCon.PasswordChar = '*';
             this.txtCon.Size = new System.Drawing.Size(207, 46);
             this.txtCon.TabIndex = 1;
             // 

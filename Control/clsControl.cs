@@ -16,8 +16,10 @@ namespace Control
         {
             objVariables = objVar; 
         }
-
+        public clsControl() { }
         //metodos
+
+        //mt para ingresar los datos del vehiculo
         public void mtIngresarVehiculo()
         {
             try
@@ -32,6 +34,8 @@ namespace Control
                 throw new Exception(e.Message);
             }
         }
+
+        //mt para traer los datos del login
         public string mtLogin()
         {
             try
@@ -47,6 +51,37 @@ namespace Control
                 throw new Exception(e.Message);
             }
         }
-       
+
+        //mt para consultar los datos completos para el formulario del resumen
+        public string[] mtConsultarDatosResumen()
+        {
+            try
+            {
+                objModelo = new clsModelo();
+
+                return objModelo.mtConsultarDatosResumen();
+
+            }catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        //mt para consultar los datos basicos para el formulario del resumen
+        public string[] mtConsultarDatosBasicos()
+        {
+            try
+            {
+                objModelo = new clsModelo();
+
+                return objModelo.mtConsularDatosBasicos();
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
     }
 }

@@ -14,20 +14,20 @@ namespace Modelo
         string usuario = "admin";
         string contraseña = "1234";
         string nombre = "Arnold McGregor";
-
+        string[] vector = null;
+        string[,] vectorr = null;
         //Venta Vehiculo
-        string tipoCoche = string.Empty;
-        string marca = string.Empty;
-        string linea = string.Empty;
-        string imagenRua = string.Empty;
-        string ciudad  =string.Empty;
-        string modelo =string.Empty;
-        string placa =string.Empty;
-        string kilometraje =string.Empty;
-        string motor =string.Empty;
-        string accesorios =string.Empty;
-        string precio =string.Empty;
-        string rutai = string.Empty;
+        string tipoCoche = "Automovíl";
+        string marca = "Renault 4";
+        string linea = "Clasica";
+        string ciudad  = "Medellín";
+        string modelo = "1991";
+        string placa ="acb456";
+        string kilometraje = "10000";
+        string motor ="Viejo";
+        string accesorios ="Aleta";
+        string precio ="Gratis";
+        string rutai = "C:\\Users\\User\\Downloads\\Coches\\Renault.jpg";
 
         public clsModelo()
         {
@@ -68,5 +68,55 @@ namespace Modelo
                 throw new Exception(ex.Message);
             }
         }
+
+        //metodo para sacar la información completa para formulario resumen
+        public string[] mtConsultarDatosResumen()
+        {
+            try
+            {
+                vector = new string[12];
+
+                vector[0] = tipoCoche ;
+                vector[1] = marca;
+                vector[2] = linea;
+                vector[3] = rutai;
+                vector[4] = ciudad;
+                vector[5] = modelo;
+                vector[6] = placa;
+                vector[7] = kilometraje;
+                vector[8] = motor;
+                vector[9] = accesorios;
+                vector[10] = precio;
+
+                return vector;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        //metodo para sacar la información basico para formulario resumen
+        public string[] mtConsularDatosBasicos()
+        {
+            try
+            {
+                vector = new string[6];
+
+                vector[0] = precio;
+                vector[1] = marca;
+                vector[2] = rutai;
+                vector[3] = ciudad;
+                vector[4] = modelo;
+                vector[5] = kilometraje;
+
+                return vector;
+            }catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+     
     }
 }
