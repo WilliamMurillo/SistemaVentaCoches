@@ -15,5 +15,10 @@ namespace Vista
             fm.Show();
             this.Hide();
         }
+
+        private void fmResumen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

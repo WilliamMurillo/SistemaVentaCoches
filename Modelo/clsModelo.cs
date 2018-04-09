@@ -27,6 +27,7 @@ namespace Modelo
         string motor =string.Empty;
         string accesorios =string.Empty;
         string precio =string.Empty;
+        string rutai = string.Empty;
 
         public clsModelo()
         {
@@ -36,13 +37,13 @@ namespace Modelo
         //metodos
         public void mtIngresarVehiculo(string coche, string marca,string linea,
             string ciudad, string modelo, string placa, string kilome, string mot, 
-            string acce, string preci)
+            string acce, string preci, string ruta)
         {
             try
             {
                 tipoCoche = coche; this.marca = marca; this.linea = linea; this.ciudad = ciudad;
                 this.modelo = modelo; this.placa = placa; kilometraje = kilome; motor = mot;
-                accesorios = acce; precio = preci;
+                accesorios = acce; precio = preci; rutai = ruta;
 
             }catch(Exception e)
             {

@@ -26,7 +26,7 @@ namespace Control
 
                 objModelo.mtIngresarVehiculo(objVariables.tipoCoche, objVariables.marca, objVariables.linea,
                     objVariables.ciudad, objVariables.modelo, objVariables.placa, objVariables.kilometraje,
-                    objVariables.motor, objVariables.accesorios, objVariables.precio);
+                    objVariables.motor, objVariables.accesorios, objVariables.precio, objVariables.imagenRura);
             }catch(Exception e)
             {
                 throw new Exception(e.Message);
@@ -47,5 +47,6 @@ namespace Control
                 throw new Exception(e.Message);
             }
         }
+       
     }
 }

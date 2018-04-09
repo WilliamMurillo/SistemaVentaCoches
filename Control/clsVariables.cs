@@ -25,5 +25,7 @@ namespace Control
         public string motor{get; set;}
         public string accesorios{get; set;}
         public string precio{get; set;}
+        
     }
+
 }

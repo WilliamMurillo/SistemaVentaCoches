@@ -17,6 +17,7 @@ namespace Vista
         //Variables
         clsControl objControl = null;
         clsVariables objVariables = null;
+
         public fmVender()
         {
             InitializeComponent();
@@ -42,10 +43,7 @@ namespace Vista
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-
-        
+        }        
 
         private void fmVender_Load(object sender, EventArgs e)
         {
@@ -54,7 +52,7 @@ namespace Vista
             cmbTipoCoche.Items.Add("Motocicleta");
             cmbTipoCoche.Text = "Automovíl";
             cmbTipoCoche.DropDownStyle = ComboBoxStyle.DropDownList;
-
+            
             txtAccesorios.Multiline = true;
             txtAccesorios.ScrollBars = ScrollBars.Vertical;
         }
@@ -77,6 +75,7 @@ namespace Vista
                 objVariables.motor = txtMotor.Text.ToString();
                 objVariables.accesorios = txtAccesorios.Text;
                 objVariables.precio = txtPrecio.Text.ToString();
+                objVariables.imagenRura = ofdCargaImagen.FileName;
 
                 objControl.mtIngresarVehiculo();
             }
@@ -114,7 +113,7 @@ namespace Vista
                 && txtKilometraje.Text.ToString() != string.Empty && txtLinea.Text.ToString() != string.Empty
                 && txtMarca.Text != string.Empty && txtModelo.Text.ToString() != string.Empty 
                 && txtMotor.Text.ToString() != string.Empty && txtPlaca.Text.ToString() != string.Empty 
-                && txtPrecio.Text.ToString() != string.Empty)
+                && txtPrecio.Text.ToString() != string.Empty && pbCargaImagen.Image != null)
             {
                 com = true;
             }
@@ -162,12 +161,20 @@ namespace Vista
             mtSoloLetras(e);
         }
 
-        private void btnVender_Click(object sender, EventArgs e)
+        //Boton para cargar imagen del vehículo
+        private void btnCargaImagen_Click(object sender, EventArgs e)
+        {
+            if(ofdCargaImagen.ShowDialog() == DialogResult.OK)
+            {
+                pbCargaImagen.Image = Image.FromFile(ofdCargaImagen.FileName);
+            }
+        }
+
+        private void btnVender_Click_1(object sender, EventArgs e)
         {
             if (mtGarantizarDatos())
             {
-                
-
+                mtLlevarDatos();
                 MessageBox.Show("Vehículo publicado", "Comprobación", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -178,8 +185,5 @@ namespace Vista
             }
 
         }
-
-
-
     }
 }

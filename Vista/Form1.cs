@@ -50,17 +50,22 @@ namespace Vista
                 }
                 else
                 {
-                    MessageBox.Show("Invalido");
+                    MessageBox.Show("Ingrese un usuario y contraseña correctose","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }            }
             catch (Exception ex)
             {
-                MessageBox.Show("Error" + ex.Message);
+                MessageBox.Show("Ocurrio un error" + ex.Message,"Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             mtLogin();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
