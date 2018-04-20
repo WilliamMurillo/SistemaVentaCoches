@@ -1,8 +1,0 @@
-C:\Users\User\source\repos\SistemaVentasCoches\Control\bin\Debug\Control.dll
-C:\Users\User\source\repos\SistemaVentasCoches\Control\bin\Debug\Control.pdb
-C:\Users\User\source\repos\SistemaVentasCoches\Control\bin\Debug\Modelo.dll
-C:\Users\User\source\repos\SistemaVentasCoches\Control\bin\Debug\Modelo.pdb
-C:\Users\User\source\repos\SistemaVentasCoches\Control\obj\Debug\Control.csprojResolveAssemblyReference.cache
-C:\Users\User\source\repos\SistemaVentasCoches\Control\obj\Debug\Control.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\SistemaVentasCoches\Control\obj\Debug\Control.dll
-C:\Users\User\source\repos\SistemaVentasCoches\Control\obj\Debug\Control.pdb

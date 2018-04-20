@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\SistemaVentasCoches\Modelo\bin\Debug\Modelo.dll
+C:\Users\User\source\repos\SistemaVentasCoches\Modelo\bin\Debug\Modelo.pdb
+C:\Users\User\source\repos\SistemaVentasCoches\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SistemaVentasCoches\Modelo\obj\Debug\Modelo.dll
+C:\Users\User\source\repos\SistemaVentasCoches\Modelo\obj\Debug\Modelo.pdb
+C:\Users\User\source\repos\SistemaVentasCoches\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\STIVENR\Desktop\SistemaVentaCoches-master\Modelo\bin\Debug\Modelo.dll
+C:\Users\STIVENR\Desktop\SistemaVentaCoches-master\Modelo\bin\Debug\Modelo.pdb
+C:\Users\STIVENR\Desktop\SistemaVentaCoches-master\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\STIVENR\Desktop\SistemaVentaCoches-master\Modelo\obj\Debug\Modelo.dll
+C:\Users\STIVENR\Desktop\SistemaVentaCoches-master\Modelo\obj\Debug\Modelo.pdb
